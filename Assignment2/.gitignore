@@ -1,0 +1,29 @@
+# Whitelist: only the files required by the assignment are tracked.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/oxpet_download_and_viz_fixed.py
+
+!/src/
+/src/*
+!/src/datamodule_oxpet.py
+!/src/model_unetpp.py
+!/src/train.py
+!/src/viz.py
+
+!/outputs/
+/outputs/*
+!/outputs/checkpoints/
+!/outputs/logs/
+!/outputs/samples/
+
+# Checkpoints: keep only the small fp16 weights file of each run
+# (full Lightning .ckpt files are >100 MB, over GitHub's file limit).
+/outputs/checkpoints/**/*.ckpt
+# Logs: keep the CSV logs (learning curves), drop local W&B caches.
+/outputs/logs/wandb/
+
+__pycache__/
+*.pyc
+.DS_Store

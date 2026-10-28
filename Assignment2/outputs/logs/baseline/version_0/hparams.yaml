@@ -1,0 +1,15 @@
+aug: light
+batch_size: 16
+data_dir: /hpc/gkobea/data
+dice_weight: 1.0
+encoder_name: resnet34
+encoder_weights: imagenet
+img_size: 384
+loss: ce
+lr: 0.0003
+num_workers: 8
+seed: 42
+tta: false
+val_fraction: 0.2
+warmup_epochs: 1.0
+weight_decay: 0.0001

@@ -1,0 +1,40 @@
+{
+  "checkpoint": "outputs/checkpoints/strong_aug_dice/best-epoch36-miou0.8214.ckpt",
+  "img_size": 384,
+  "results": [
+    {
+      "split": "test",
+      "tta": false,
+      "mIoU": 0.82908382122405,
+      "mDice": 0.900732980692382,
+      "pixel_acc": 0.9403865427552258,
+      "IoU": {
+        "pet": 0.8951343910738275,
+        "background": 0.9447433071524928,
+        "border": 0.64737376544583
+      },
+      "Dice": {
+        "pet": 0.9446658720246467,
+        "background": 0.971586639406712,
+        "border": 0.785946430645787
+      }
+    },
+    {
+      "split": "test",
+      "tta": true,
+      "mIoU": 0.8331896219162434,
+      "mDice": 0.9033981874909457,
+      "pixel_acc": 0.9422726660478606,
+      "IoU": {
+        "pet": 0.8986499117148932,
+        "background": 0.9467782268028919,
+        "border": 0.654140727230945
+      },
+      "Dice": {
+        "pet": 0.9466199178375303,
+        "background": 0.9726616147312723,
+        "border": 0.7909130299040347
+      }
+    }
+  ]
+}
